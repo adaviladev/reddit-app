@@ -2,6 +2,43 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## Wireframes
+
+Below are the basic wireframes for the main views of the Reddit App:
+
+```
++---------------------------------------------------+
+| Reddit App           [Search bar] [Category ▼]    |  <-- Header
++---------------------------------------------------+
+| [Post Title]   [Subreddit] [Author] [Votes]       |  <-- Post summary
+| [Preview/Img]  [# Comments] [View Details]        |
++---------------------------------------------------+
+| ...                                               |
++---------------------------------------------------+
+
++-------------------+
+| ← Back | Post Title                              |  <-- Post Detail Header
++-------------------+
+| Post content                                      |  <-- Post body (text/image/link)
+| Author | Subreddit | Votes                        |
++-------------------+
+| Comments:                                         |  <-- Comments section
+| - User1: ...                                      |
+| - User2: ...                                      |
++-------------------+
+
++-------------------+
+| No results found / Error loading data             |  <-- Error/Empty State
++-------------------+
+```
+
+**Sections:**
+
+- **Header:** App name/logo, search bar, category/subreddit filter.
+- **Post summary:** Shows key info for each post.
+- **Post detail:** Shows full post and comments.
+- **Error/Empty state:** For when there are no results or API errors.
+
 ## Available Scripts
 
 In the project directory, you can run:

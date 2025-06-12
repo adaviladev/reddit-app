@@ -1,0 +1,23 @@
++---------------------------------------------------+
+| Reddit App           [Search bar] [Category ▼]    |  <-- Header
++---------------------------------------------------+
+| [Post Title]   [Subreddit] [Author] [Votes]       |  <-- Post summary
+| [Preview/Img]  [# Comments] [View Details]        |
++---------------------------------------------------+
+| ...                                               |
++---------------------------------------------------+
+
++-------------------+
+| ← Back | Post Title                              |  <-- Post Detail Header
++-------------------+
+| Post content                                      |  <-- Post body (text/image/link)
+| Author | Subreddit | Votes                        |
++-------------------+
+| Comments:                                         |  <-- Comments section
+| - User1: ...                                      |
+| - User2: ...                                      |
++-------------------+
+
++-------------------+
+| No results found / Error loading data             |  <-- Error/Empty State
++-------------------+

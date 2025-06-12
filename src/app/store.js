@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
 
+// Agrega aquí tus reducers cuando los crees
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    // posts: postsReducer,
+    // search: searchReducer,
+    // categories: categoriesReducer,
   },
 });
