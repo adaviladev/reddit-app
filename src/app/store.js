@@ -1,10 +1,9 @@
+// filepath: c:\Users\alvar\Desktop\Dev\reddit-app\src\app\store.js
 import { configureStore } from "@reduxjs/toolkit";
+import postsReducer from "../features/posts/postsSlice";
 
-// Agrega aquí tus reducers cuando los crees
 export const store = configureStore({
   reducer: {
-    // posts: postsReducer,
-    // search: searchReducer,
-    // categories: categoriesReducer,
+    posts: postsReducer,
   },
 });
