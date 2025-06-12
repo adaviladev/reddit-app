@@ -1,11 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 // Async thunk para obtener post populares de Reddit
-export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
-  const response = await fetch("https://www.reddit.com/r/popular.json");
-  const data = await response.json();
-  return data.data.children.map((child) => child.data);
-});
+export const fetchPosts = createAsyncThunk(
+  "posts/fetchPosts",
+  async (subreddit = "popular") => {
+    const response = await fetch(`https://www.reddit.com/r/${subreddit}.json`);
+    const data = await response.json();
+    return data.data.children.map((child) => child.data);
+  }
+);
 
 const postsSlice = createSlice({
   name: "posts",

@@ -1,0 +1,21 @@
+.post-list-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  background: #fff;
+  border-radius: 6px;
+  transition: box-shadow 0.2s;
+}
+.post-list-item:hover {
+  box-shadow: 0 2px 8px rgba(108, 66, 166, 0.08);
+}
+.post-list-title {
+  color: #6c42a6;
+}
+.post-list-meta {
+  color: #555;
+}
+.post-list-thumbnail {
+  max-width: 100px;
+  border-radius: 6px;
+}
